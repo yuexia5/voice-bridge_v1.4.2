@@ -1,0 +1,23 @@
+{
+  "name": "voice-bridge",
+  "version": "1.4.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "dev:bridge": "npm run dev",
+    "build": "tsc -p tsconfig.json",
+    "build:bridge": "npm run build",
+    "start:bridge": "npm run start",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.3"
+  }
+}
